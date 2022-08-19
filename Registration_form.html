@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: darkslateblue;
+        }
+        form{
+            justify-content: center;
+            text-align: center;
+            display: block;
+            width: 320px;
+            height: 450px;
+            border: 2px solid black;
+            background-color: chartreuse;
+            position: relative;
+            left: 650px;
+            top: 150px;
+            border-radius: 10px;
+        }
+       
+         input[type="text"],input[type="Password"],input[type="email"]{
+               margin-top: 35px;
+               border-top: 0px;
+               border-left: 0px;
+               border-right: 0px;
+                    /* margin: 20px;   */
+                    width: 250px;
+                    height: 30px;
+                    border-radius: 5px;                                      
+         }
+        
+         input[type="submit"]{
+            margin-top: 30px;
+            width: 80px;
+            height: 30px;
+            border-radius: 8px;
+            background-color:red;
+            font-weight: bold;
+         }
+         input[type="submit"]:hover{
+            background-color: black;
+            color: white;
+           cursor: pointer;
+         }
+        
+         p{
+
+            margin-top: 40px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 120px;
+            height: 25px;
+            position: relative;
+            left: 70px;
+            border: 2px solid black;
+            background-color: coral;
+            border-radius: 5px;
+            padding: 5px;
+            }
+            a{
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover{
+                font-size: large;
+            }
+    </style>
+
+</head>
+<body>
+      <form action="">
+        <div id="login">
+            <p> Sign Up Page</p>
+            <input type="text" name="" id="name" placeholder="Name">
+
+            <input type="text" name="" placeholder="User name" id="username" required>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <br>
+            <input type="password" name="" placeholder="Enter Password" id="password" required>
+            <br>
+            <input type="submit" value="Sign up" onclick="signup">
+            <br>
+            <h5>if you have already an account</h5>
+            <a href="/index.html">Click here</a>
+        </div>
+      </form>
+</body>
+<script>
+    function signup(){
+        alert("You have Successfully Resgisterd")
+        window.location.assign("index.html");
+    }
+</script>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: darkblue;
+        }
+        form{
+            justify-content: center;
+            text-align: center;
+            display: block;
+            width: 280px;
+            height: 350px;
+            border: 2px solid black;
+            background-color: chartreuse;
+            position: relative;
+            left: 650px;
+            top: 150px;
+            border-radius: 10px;
+        }
+       
+         input[type="text"]{
+               margin-top: 50px;
+                    /* margin: 20px;   */
+                    width: 250px;
+                    height: 30px;
+                    border-radius: 5px;                                      
+         }
+         input[type="password"]{
+                    /* margin: 20px;     */
+                    margin-top: 50px;
+                    width: 250px;
+                    height: 30px;   
+                    border-radius: 5px;                                     
+         }
+         input[type="submit"]{
+            margin-top: 30px;
+            width: 80px;
+            height: 30px;
+            border-radius: 8px;
+            background-color:red;
+            font-weight: bold;
+         }
+         input[type="submit"]:hover{
+            background-color: black;
+            color: white;
+           cursor: pointer;
+         }
+         p{
+
+            margin-top: 40px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 100px;
+            height: 25px;
+            position: relative;
+            left: 70px;
+            border: 2px solid black;
+            background-color: coral;
+            border-radius: 5px;
+            padding: 5px;
+         }
+         a{
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover{
+                font-size: large;
+            }
+            h1{
+                color: white;
+                position: relative;
+                left: 300px;
+                top: 100px;
+            }
+    </style>
+</head>
+<body>
+    <h1>First Try To Log in For Going into the Sacret Santa Website</h1>
+      <form action="">
+        <div id="login">
+            <p>Log In Page</p>
+            <input type="text" name="" placeholder="User name" id="username" required>
+            <br>
+            <input type="password" name="" placeholder="Enter Password" id="password" required>
+            <br>
+            <input type="submit" value="Log In" onclick="Login()" >
+            <br>
+            <h5>if you don't have an account</h5>
+            <a href="/Registration_form.html">Click Here</a>
+        </div>
+      </form>
+</body>
+<script>
+    function Login(){
+        var us=document.getElementById("username").value;
+        var pass=document.getElementById("password").value;
+
+        if(us=="Shivam" && pass=="Shivam"){
+            
+            window.location.assign("Home.html")
+            alert("You have Log in Successfully");
+            
+        }
+        else{
+            alert("Your Password or User name are wrong");
+            return ''
+        }
+    }
+</script>
+</html>
